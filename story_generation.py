@@ -1,7 +1,7 @@
 import google.generativeai as palm
 
 def generate_story(prompt):
-    palm.configure(api_key="AIzaSyA6Ztezs8qXHae_9X42IFIYoD4zdT95GoU")
+    palm.configure(api_key="put your api key here")
 
     models = [
         m for m in palm.list_models() if "generateText" in m.supported_generation_methods
